@@ -1,4 +1,4 @@
-bmiTell :: Double -> Double -> String 
+bmiTell :: Double -> Double -> String
 bmiTell weight height
     | weight / height ^ 2 <= 18.0 = "You're underweght , you emo , you!"
     | weight / height ^ 2 <= 25.0 = "You're supposedly normal.\
@@ -16,6 +16,6 @@ max' a b
 
 myCompare :: (Ord a) => a -> a -> Ordering
 x `myCompare` y
-    | x == y    = EQ 
+    | x == y    = EQ
     | x > y     = GT
     | otherwise = LT

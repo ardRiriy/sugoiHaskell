@@ -1,8 +1,8 @@
 --10以上のすべての奇数をBANG!に,10以下のすべての奇数をBOOM!に置き換える
 boombang xs =
-    [if x < 10 
-        then "BOOM!" 
-        else "BANG!"| 
+    [if x < 10
+        then "BOOM!"
+        else "BANG!"|
      x <- xs ,
      odd x] --oddは奇数に対してTrueを返す関数
 
