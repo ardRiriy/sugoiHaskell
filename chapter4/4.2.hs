@@ -3,7 +3,11 @@ maximum' []     = error "maximum of empty list!"
 maximum' [x]    = x
 maximum' (x:xs) = max x (maximum' xs)
 
---max x y : 大きいほうの値を返す.同じ値ならxを返す.
+
+{--
+max :: Ord a => a -> a -> a
+max x y : 大きいほうの値を返す.同じ値ならxを返す.
+--}
 
 
 replicate' :: Int -> a -> [a]
